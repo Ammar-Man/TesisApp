@@ -2,7 +2,7 @@ import http.server
 import socketserver
 import os
 # Set the port number you want to use
-port = 5600
+port = 5500
 
 # Set the path to the directory you want to serve
 directory = r"D:/2024/tesis robot app/Tesis Robot/Linux/Tablet"
