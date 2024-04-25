@@ -1,0 +1,103 @@
+{
+  "intents": [
+    {
+      "tag": "hello",
+      "patterns": [
+        "hej"
+      ],
+      "responses": [
+        "hej"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "what is your name"
+      ],
+      "responses": [
+        "snow"
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "waht is your name"
+      ],
+      "responses": [
+        "snow"
+      ]
+    },
+    {
+      "tag": "& C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python3.10.exe \"d:/2024/Arcada robot/ArcadaRobot/Linux/Flask/chatbot/app.py\"",
+      "patterns": [
+        "hello"
+      ],
+      "responses": [
+        "& C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python3.10.exe \"d:/2024/Arcada robot/ArcadaRobot/Linux/Flask/chatbot/app.py\""
+      ]
+    },
+    {
+      "tag": "hi",
+      "patterns": [
+        "hi"
+      ],
+      "responses": [
+        "hi"
+      ]
+    },
+    {
+      "tag": "booking",
+      "patterns": [
+        "How can I book a flight?"
+      ],
+      "responses": [
+        "To book a flight you can use our online booking platform on our website"
+      ]
+    },
+    {
+      "tag": "exit",
+      "patterns": [
+        "& C:/Users/Admin/AppData/Local/Microsoft/WindowsApps/python3.10.exe \"d:/2024/Arcada robot/ArcadaRobot/Linux/Flask/chatbot/app.py\""
+      ],
+      "responses": [
+        "exit"
+      ]
+    },
+    {
+      "tag": "ok",
+      "patterns": [
+        "ok"
+      ],
+      "responses": [
+        "ok"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "can you help me"
+      ],
+      "responses": [
+        "yes i can help you "
+      ]
+    },
+    {
+      "tag": "hej",
+      "patterns": [
+        "hei"
+      ],
+      "responses": [
+        "hej"
+      ]
+    },
+    {
+      "tag": "car ",
+      "patterns": [
+        "car"
+      ],
+      "responses": [
+        "car is car"
+      ]
+    }
+  ]
+}
