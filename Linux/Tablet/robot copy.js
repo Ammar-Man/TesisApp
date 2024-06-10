@@ -292,11 +292,19 @@ if(clickableImageTechlabs){
 
 //  Exit button with robot face interactions 
 var clickableImageExit = document.querySelector('.clickable-image-Exit');
-// if(clickableImageExit){
-//     console.log("clickable-image-Exit");
-// }
+if(clickableImageExit){
+    console.log("clickable-image-Exit");
+//    clickableImageExit.addEventListener('click',  async function(event) {
+//     event.preventDefault(); // Prevent the default link behavior
+//        console.log("clickableImageExit");
+//         SendFaceName(2);
+//         await myFunction(1000);
+//          SendFaceName(0);
+//          await myFunction(500);
+//          window.location.href = "../";
+//     });
+}
 
 // SendFaceName(0);
-// console.log("robot ");
-// console.log("robot");
+console.log("robot ");
 
