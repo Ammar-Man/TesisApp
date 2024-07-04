@@ -46,7 +46,7 @@ class TextToSpeechEngine:
 # # Thread(tts_engine.speak("Hello, how are you?", "Male"))
 # Thread(tts_engine.speak("hi", "Female"))
 
-# tts_engine.speak("Hello, how are you?", "Male")
+# tts_engine.speak("Who is the maker?", "Male")
 # result = tts_engine.end()
 # tts_engine.cleanup()
 # print(result)

@@ -1,1 +1,13 @@
+15.12.2023 : is to fis serve the html page on iphone the new task 
+need to  HTML page on a web server accessible from your iPhone. 
+will use tools like http-server like flask server and html
 
+the app working on localhost on iphone 
+cmd find ipconfig for IP localhost
+
+to run app.py on bash terminal type : command 
+$ flask run --host=0.0.0.0 --port=5100
+http://192.168.32.111:5100/
+
+pip install cmake
+pip install dlib

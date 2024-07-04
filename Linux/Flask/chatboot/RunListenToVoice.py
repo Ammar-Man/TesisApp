@@ -6,7 +6,7 @@ from chatNLP import askRobot
 import speech_recognition as sr
 
 tts_engine = TextToSpeechEngine()
-userinputText = "hello my names Snow  TechLabs how i can help you!"
+userinputText = "hello my name Snow TechLabs how i can help you!"
 
 def splitWords(textinput):
     password_list = []
@@ -77,3 +77,5 @@ def listen_to_voice(input):
 
 
 # listen_to_voice("hello")
+get_askRobot("Wasdfasdfasd fads fads fasd?")
+# askRobot(["Who is the maker?"])

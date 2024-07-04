@@ -16,12 +16,11 @@ pip freeze > requirements.txt
    - 0.1 In "Linux/Flask/chatboot/RunListenToice.py," modify sys.path.append('D:/yourfolder../ArcadaRobot/Linux/Flask/chatboot').
    - 0.2 In "Linux/Flask/Start_Tablet_html.py," update directory = ("D:/yourfolder.../ArcadaRobot/Linux/Tablet").
 
-Run linux.bat will 
--  Execute "Run Camera_expression.py. (Note: This script's frontend is not included in the tablet frontend but    still running in the backend.)"
+Run Linux.bat will 
+-  Execute Camera_expression.py.
 -  Execute LinuxServer.py.
 -  Execute Start_Tablet_html.py.
-
-Run RPi.bat will 
+Run PRI.bat will
 -  Execute RPiServer.py.
 
 1. The Camera expression functionality is implemented in the file Camera_expression.py and operates on port 1500.
