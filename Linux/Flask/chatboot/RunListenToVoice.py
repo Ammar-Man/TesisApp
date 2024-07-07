@@ -46,12 +46,15 @@ def listen_to_voice(input):
     
     error_list =[]
     callIsOpen = True
+    print("start lisning ville tips")
     while callIsOpen:
+        # print("... loop")
         if len(error_list) >= 1:break
         recognizer = sr.Recognizer()
         with sr.Microphone() as source:
-            print("Listening...")
+            # print("Listening start...")
             audio = recognizer.listen(source)
+            # print("Listening stop...")
         try:
             text = recognizer.recognize_google(audio)
             textsplit = text_exit_match(text)
@@ -77,5 +80,5 @@ def listen_to_voice(input):
 
 
 # listen_to_voice("hello")
-get_askRobot("Wasdfasdfasd fads fads fasd?")
+# get_askRobot("Wasdfasdfasd fads fads fasd?")
 # askRobot(["Who is the maker?"])
