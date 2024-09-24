@@ -1,19 +1,9 @@
-# import sys
-# sys.path.append('D:/2024/Arcada robot/ArcadaRobot/Linux/Flask/chatboot')
-
-import os
-os.chdir(r'D:\2024\tesis robot app\Tesis Robot\Linux\Flask\chatboot')
-# Hämta nuvarande arbetskatalog
-current_directory = os.getcwd()
-print(f'RLTVpy => Arbetskatalog: {current_directory}')
-
-# Hämta var själva Python-skriptet ligger
-script_directory = os.path.dirname(os.path.abspath(__file__))
-print(f'RLTVpy => Python-skriptets katalog: {script_directory}')
-
-from chatboot.TextToSpeechEngineScript import TextToSpeechEngine, Thread
+import sys
+sys.path.append('D:/2024/Arcada robot/ArcadaRobot/Linux/Flask')
+from TextToSpeechEngineScript import TextToSpeechEngine, Thread
 # from chatNLP import askRobot
-from new_test_spacy_bot import get_response
+# from new_test_spacy_bot import get_response
+from spacy_nltk_treings_modol.get_ask import get_ask
 import speech_recognition as sr
 
 tts_engine = TextToSpeechEngine()
@@ -41,7 +31,8 @@ def get_askRobot(input):
     if textsplit: 
         return input
     # x = askRobot([input])
-    x =  get_response(input)
+    # x =  get_response(input)
+    x =  get_ask(input)
     print(x)
     Thread(tts_engine.speak(x, "Female"))
     return x
@@ -89,6 +80,6 @@ def listen_to_voice(input):
 
 
 
-get_askRobot("Who is Kristoffer Kuvaja-Adolfsson?")
+get_askRobot("what is arcada")
 # askRobot(["Who is the maker?"])
-# # listen_to_voice("hello")
+listen_to_voice("hello")

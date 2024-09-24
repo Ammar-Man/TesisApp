@@ -1,6 +1,5 @@
-import spacy
+import spacy, os
 from nltk.metrics import jaccard_distance
-
 # Ladda spaCy-modellen
 nlp = spacy.load("en_core_web_sm")
 

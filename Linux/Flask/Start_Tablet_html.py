@@ -5,10 +5,9 @@ import os
 port = 5500
 
 # Set the path to the directory you want to serve
-directory = r"D:/Github_Ammar-Man/TesisApp/Linux/Tablet"
-# D:/Github_Ammar-Man/TesisApp/Linux/Tablet
-# ../Linux/Tablet
-# D:\Github_Ammar-Man\TesisApp\Linux\Flask\Start_Tablet_html.py
+directory = r"D:/2024/tesis robot app/Tesis Robot/Linux/Tablet"
+
+
 # Change to the specified directory
 try:
     os.chdir(directory)

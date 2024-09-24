@@ -1,12 +1,30 @@
 from queue import Queue
 from flask_cors import CORS
 from flask import Flask, Response, render_template, request,  jsonify
-
 import requests,os
 import socket
+from RunListenToVoice import listen_to_voice, get_askRobot, stopCall
+# from chatboot.new_test_spacy_bot import get_response
+
+
+# Hämta nuvarande arbetskatalog
+current_directory = os.getcwd()
+print(f'Linux => Arbetskatalog: {current_directory}')
+script_directory = os.path.dirname(os.path.abspath(__file__))
+print(f'Linux => Python-skriptets katalog: {script_directory}')
+
+
 # run RunListenToVoice to make robot voice chat
 
-from chatboot.RunListenToVoice import listen_to_voice, get_askRobot, stopCall
+
+
+
+
+# Hämta nuvarande arbetskatalog
+current_directory = os.getcwd()
+print(f'Linux => Arbetskatalog: {current_directory}')
+script_directory = os.path.dirname(os.path.abspath(__file__))
+print(f'Linux => Python-skriptets katalog: {script_directory}')
 
 def send_face_data(data,post_name):
     expression_ip = request.environ.get("REMOTE_ADDR")
@@ -27,16 +45,16 @@ def text_to_speech(data):
         return None
     
 def runCalling(input):
-
+    print(input)
     if input == "off":
         stopCall()
         print(input)
         return None
     try:
-        listen_to_voice(input)
+        listen_to_voice()
     except:
-        return None
-
+        return input
+runCalling("arcada")
 
 # app = Flask(__name__)
 app = Flask(__name__,  template_folder='Control_panel'  )
@@ -78,6 +96,7 @@ def api_parse_sentence():
         send_face_data(touch_data,"touch")
         return "Touch OK"
     elif call_data:
+        print("call_data")
         queue.put(call_data)
         runCalling(call_data)
         return "call ok"
